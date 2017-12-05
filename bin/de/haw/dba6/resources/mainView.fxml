@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="482.0" prefWidth="649.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="de.haw.dba6.view.MainViewController">
+  <columnConstraints>
+      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+  </columnConstraints>
+  <rowConstraints>
+      <RowConstraints maxHeight="35.0" minHeight="10.0" prefHeight="14.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <ListView fx:id="tabellen" prefHeight="0.0" prefWidth="162.0" GridPane.columnSpan="3" GridPane.rowIndex="2" GridPane.rowSpan="4" />
+      <TableView fx:id="tableViewSql" prefHeight="0.0" prefWidth="59.0" GridPane.columnIndex="4" GridPane.columnSpan="7" GridPane.rowIndex="7" GridPane.rowSpan="3" />
+      <MenuBar fx:id="menuBar" GridPane.columnSpan="11">
+        <menus>
+            <Menu fx:id="MenuCon" mnemonicParsing="false" text="Connection">
+              <items>
+                  <MenuItem fx:id="menuItemCon" mnemonicParsing="false" text="connect" />
+                  <MenuItem fx:id="dissconnect" mnemonicParsing="false" text="dissconnect" />
+              </items>
+            </Menu>
+        </menus>
+      </MenuBar>
+      <TextArea fx:id="sqlCodeArea" prefHeight="63.0" prefWidth="59.0" GridPane.columnSpan="3" GridPane.rowIndex="7" GridPane.rowSpan="3" />
+      <Button fx:id="resultButton" mnemonicParsing="false" prefHeight="130.0" prefWidth="59.0" text="&gt;&gt;" GridPane.columnIndex="3" GridPane.rowIndex="8" />
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="            Sellect statement" wrappingWidth="142.13671875" GridPane.rowIndex="6" />
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text=" All tables" wrappingWidth="121.33984375" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+      <Text fx:id="statusText" strokeType="OUTSIDE" strokeWidth="0.0" text="not connected" wrappingWidth="526.13671875" GridPane.columnIndex="1" GridPane.rowIndex="10" />
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="      status:" wrappingWidth="60.962890625" GridPane.rowIndex="10" />
+      <Button fx:id="addButton" mnemonicParsing="false" text="add .sql file" GridPane.columnIndex="4" GridPane.columnSpan="2" GridPane.rowIndex="1" />
+      <TextArea fx:id="sqlCodeTextArea" prefHeight="0.0" prefWidth="0.0" GridPane.columnIndex="4" GridPane.columnSpan="7" GridPane.rowIndex="2" GridPane.rowSpan="4" />
+      <Button fx:id="execButton" mnemonicParsing="false" text="execute" GridPane.columnIndex="6" GridPane.columnSpan="2" GridPane.rowIndex="1" />
+      <Button fx:id="execTriggerButton" mnemonicParsing="false" text="execute trigger" GridPane.columnIndex="8" GridPane.columnSpan="2" GridPane.rowIndex="1" />
+   </children>
+</GridPane>
